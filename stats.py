@@ -43,6 +43,7 @@ def find_in_dict(years, input_stats):
                 counter += 1
                 average += float(value[stat])
                 average_dict[stat] = round(average / counter, 2)
+    if len(average_dict) == 0: return 'No data found'
     return average_dict
     
 
